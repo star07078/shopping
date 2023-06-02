@@ -1,0 +1,27 @@
+/* 页面过渡动画 */
+/* 在页面上使用 transform 会导致页面内的 fixed 定位渲染为 absolute，需要在动画完成后移除 */
+/* base、before、after有顺序要求，不要变更排序 */
+
+/* #ifdef H5 */
+uni-page {opacity:0; position:relative;}
+uni-page.animation-show{opacity:1;}
+	/* 默认 */
+uni-page.animation-base{top:0}
+uni-page.animation-before{top:10px;}
+uni-page.animation-after{top:0}
+uni-page.animation-in{transition: top .3s, opacity .25s;}
+uni-page.animation-out{transition: top .3s, opacity .25s;}
+	/* 右侧进入 */
+uni-page.animation-right-base{transform:translateX(0px);}
+uni-page.animation-right-before{transform:translateX(30px);}
+uni-page.animation-right-after{transform:translateX(0px);}
+uni-page.animation-right-in{transition: transform .3s, opacity .3s;}
+uni-page.animation-right-out{transition: transform .3s, opacity .3s;}
+	/* 左侧进入 */
+uni-page.animation-left-base{transform:translateX(0px);}
+uni-page.animation-left-before{transform:translateX(-30px);}
+uni-page.animation-left-after{transform:translateX(0px);}
+uni-page.animation-left-in{transition: transform .3s, opacity .3s;}
+uni-page.animation-left-out{transition: transform .3s, opacity .3s;}
+
+/* #endif */

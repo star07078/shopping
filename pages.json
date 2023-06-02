@@ -1,0 +1,87 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/find/index",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/message/index",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/login/register",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#16bc8c",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#646566",
+		"selectedColor": "#16bc8c",
+		"list": [{
+				"text": "首页",
+				"pagePath": "pages/home/index"
+			},
+			{
+				"text": "发现",
+				"pagePath": "pages/find/index"
+			},
+			{
+				"text": "消息",
+				"pagePath": "pages/message/index"
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/my/index"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}
